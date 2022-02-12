@@ -90,20 +90,9 @@ const movies = [
     }
   ];
 
-const penes = [
-    {name: "Pene 1",tamaño: "25cm"},
-    {name: "Pene 2",tamaño: "22cm"},
-    {name: "Pene 3",tamaño: "21cm"},
-    {name: "Pene 4",tamaño: "24cm"},
-    {name: "Pene 5",tamaño: "2cm"},
-    {name: "Pene 6",tamaño: "21cm"},
-    {name: "Pene 7",tamaño: "27cm"},
-    {name: "Pene 8",tamaño: "15cm"}
-]
-
-Movie.create(penes)
+Movie.create(movies)
 .then((data)=>{
-    console.log("Updated database with", data.length," penes")
+    console.log("Updated database with", data.length," movies")
 }).catch(err=>console.log(err))
 
 
